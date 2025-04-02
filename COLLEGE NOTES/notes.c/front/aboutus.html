@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notes website</title>
+    <link rel="icon" href="Images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home.html"><img src="Images/college_logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="../front/index.html">HOME</a></li>
+            <li><a href="../front/index.html">HOME</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="../complain/index.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About me</h1>
+    </section>
+
+    <!-- -----------------about us---------------------- -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <img src="../front/image/aboutme.jpg" alt="About Zahir Khan" />
+        </div>
+        <div class="about-col">
+          <h1>Hi, I'm Zahir Khan</h1>
+          <p>
+            I am a B.Tech student specializing in Computer Science and Engineering (CSE). Currently, I am working on creating a user-friendly notes-sharing website to help students access, upload, and share educational resources. 
+            This platform is designed to simplify the learning process, promote collaboration, and provide an organized way for students to discover valuable study materials. 
+            My passion lies in developing projects that make a meaningful impact while leveraging innovative technologies to create efficient and effective solutions. 
+            I believe in continuous learning and am always exploring new ways to enhance my skills and contribute to the tech community.
+          </p>
+          <a href="#explore" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- ----------footer---------------- -->
+
+    <section class="footer">
+      <h1>About Me</h1>
+      <div class="footer-intro">
+        <p>
+          "I am Zahir Khan, a B.Tech student in Computer Science and Engineering (CSE). <br />
+          With a passion for technology and problem-solving, I am currently developing a notes-sharing platform to empower students with easy access to educational resources. <br />
+          My goal is to create impactful projects that merge innovation with practicality, contributing to a brighter future for learners everywhere."
+        </p>
+      </div>
+      
+      <div class="icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=100094296491449"
+          class="fa fa-facebook"
+        ></a>
+        <a href="https://twitter.com/RANIT_MANIK" class="fa fa-twitter"></a>
+        <a
+          href="https://www.instagram.com/ranit_manik_/"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ranit-manik/"
+          class="fa fa-linkedin"
+        ></a>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by zahir</p>
+      <p>© 2021 Zahir khan</p>
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
